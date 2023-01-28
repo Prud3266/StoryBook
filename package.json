@@ -1,13 +1,13 @@
 {
-  "homepage": "http://prud3266.github.io/Storybook   ",
+  "homepage": "http://Prud3266.github.io/Storybook",
   "name": "stories",
   "version": "1.0.0",
   "description": "An app for private and public stories",
   "main": "app.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node app",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run dev", 
+    "deploy": "gh-pages -d dev",
     "dev": "cross-env NODE_ENV=development nodemon app"
   },
   "author": "Jerry Adepoju",
