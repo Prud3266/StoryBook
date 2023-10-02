@@ -10,7 +10,7 @@ const session = require('express-session')
 const MongoStore = require('connect-mongo')
 const connectDB = require('./config/db.js')
 
-//Load Config
+//Load Config 
 dotenv.config({path: './config/config.env'})
  
 // Passport Config 
@@ -76,8 +76,6 @@ app.use('/stories', require('./routes/stories'))
 
 
 const PORT = process.env.PORT || 3000
- 
-app.listen(
-    PORT,
-     console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}...`)
+
+app.listen(PORT,console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}...`)
 )
